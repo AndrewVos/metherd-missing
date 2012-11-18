@@ -1,4 +1,4 @@
-# Metherd::Missing
+# metherd-missing
 
 Getting tired of having to go in and modify code each time you make a typo?
 metherd-missing to the rescue!
