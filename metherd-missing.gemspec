@@ -5,7 +5,7 @@ require 'metherd-missing/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "metherd-missing"
-  gem.version       = Metherd::Missing::VERSION
+  gem.version       = MetherdMissing::VERSION
   gem.authors       = ["Andrew Vos"]
   gem.email         = ["andrew.vos@gmail.com"]
   gem.description   = %q{Translates misspellings of method calls to actual method calls!}
