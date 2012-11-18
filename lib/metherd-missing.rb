@@ -3,12 +3,12 @@ require "metherd-missing/levenshtein_distance"
 require "metherd-missing/trie_node"
 
 module Kernel
-  def method_missing method
+  def method_missing(method, *args, &block)
     possible_method_names = self.methods.map(&:to_s)
     results = MetherdMissing::LevenshteinDistance.new(possible_method_names).search(method, 1)
     if results.any?
       correct_typos!(method.to_s, results.keys.first.to_s, caller[0])
-      self.send(results.keys.first.to_s)
+      self.send(results.keys.first.to_s, *args, &block)
     else
       super
     end
