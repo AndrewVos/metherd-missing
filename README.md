@@ -1,6 +1,7 @@
 # Metherd::Missing
 
-TODO: Write a gem description
+Getting tired of having to go in and modify code each time you make a type?
+metherd-missing to the rescue!
 
 ## Installation
 
@@ -18,7 +19,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "metherd-missing"
+
+[3, 2, 1].revrse #=> [1, 2, 3]
+
+"LOL".dwncase #=> "lol"
+
+```
 
 ## Contributing
 
